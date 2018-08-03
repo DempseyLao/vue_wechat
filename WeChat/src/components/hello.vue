@@ -4,7 +4,7 @@
         <button type="button" @click="goHome">回到首页</button>
         <button type="button" @click="gonnew">登陆页面</button>
         <button type="button" @click="WeChat">微信页面</button>
-        <button type="button" @click="test">测试页面</button>
+        
     </div>
 </template>
 <script>
@@ -28,10 +28,8 @@ export default {
         ,
         WeChat(){
             this.$router.push({path:"/wechat"})
-        },
-        test(){
-            this.$router.push({path:"/test"})
         }
+        
     }
 }
 </script>

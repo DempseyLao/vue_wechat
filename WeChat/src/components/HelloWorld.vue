@@ -1,85 +1,24 @@
 <template>
-  <div class="hello">
-    <h1 @click="home">{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li>
-        <a
-          href="https://vuejs.org"
-          target="_blank"
-        >
-          Core Docs
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://forum.vuejs.org"
-          target="_blank"
-        >
-          Forum
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          Community Chat
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-        >
-          Twitter
-        </a>
-      </li>
-      <br>
-      <li>
-        <a
-          href="http://vuejs-templates.github.io/webpack/"
-          target="_blank"
-        >
-          Docs for This Template
-        </a>
-      </li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li>
-        <a
-          href="http://router.vuejs.org/"
-          target="_blank"
-        >
-          vue-router
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vuex.vuejs.org/"
-          target="_blank"
-        >
-          vuex
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vue-loader.vuejs.org/"
-          target="_blank"
-        >
-          vue-loader
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
-          awesome-vue
-        </a>
-      </li>
-    </ul>
+  <div class="hello" style="text-align: center;">
+    <h1 >{{ msg }}</h1>
+    <h2>Dempsey Lao Test making</h2>
+    <p>
+     <div type="button" @click="gonnew" ><img src="../assets/img/login/jingdong_logo.jpg" /></div>
+     <p>
+   <div id=""  @click="WeChat" style="font-family: 黑体;text-align: center;">
+			<div class="" style="display: inline-block;margin-left:9px">
+			<div class="" style="float: left;">
+				<img src="../assets/background.png" style="width:63px"/>
+			</div>
+			<div class="" style="float:left;font-size: 48px;font-weight:bold;color:#85DA46 ;padding-left: 7px;">
+				微信
+			</div>
+			<div id="" style="padding: 13px 0px 0px 20px;font-size: 25px;float: left;">
+				欢迎登陆
+			</div>
+			</div>
+		</div>
+     
   </div>
 </template>
 
@@ -88,13 +27,18 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js WebApp'
     }
   }
   ,
     methods:{
-        home(){
-            this.$router.push({path:"/hello"})
+     
+         gonnew(){
+            this.$router.push({path:"/hw"})
+        }
+        ,
+        WeChat(){
+            this.$router.push({path:"/wechat"})
         }
     }
 }
@@ -116,4 +60,21 @@ li {
 a {
   color: #42b983;
 }
+.bg-bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+ul,li {
+    margin: 0;
+    padding: 0;
+}
+.hello{
+  text-align: center
+}
+
+
 </style>

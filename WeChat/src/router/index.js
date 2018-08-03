@@ -2,8 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Hello from '@/components/hello'
-import hw from '@/components/newcomponents/helloworld'
-import test from '@/components/newcomponents/test'
+import hw from '@/components/newcomponents/jingdong'
 import wechat from '@/components/wechat/wechat'
 import mail from '@/components/wechat/mail_list'
 import find from '@/components/wechat/find'
@@ -73,12 +72,7 @@ export default new Router({
       name: 'chat',
       component: chat
     }
-    ,
-    {
-      path: '/test',
-      name: 'test',
-      component: test
-    }
+    
     ,
     {
       path: '/friend_space',
