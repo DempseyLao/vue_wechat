@@ -51,7 +51,7 @@ vscode、git、node.js的安装都可以百度找到，在这里不多做介绍
 ``` bash
 # 开发经验与总结在我GitHub laodeyu存储库
 
- 具体地址为：https://github.com/ldy1231/laodeyu
+ 具体地址为：https://github.com/DempseyLao/laodeyu/tree/dev
  
  访问地址选择Dev分支
 
