@@ -97,6 +97,50 @@ created(){//在页面创建的时候get easy-mock事先第一好的模拟数据 
             })     
         },
   ```  
+    ``` html
+<template>
+   	<div id="all">		
+		<headComponent></headComponent>
+		<div class="Small_program" v-show="Small_program" >
+			<div id="" >
+				<img src="../../assets/wechat/s1.png"  />
+			</div>
+			<div id="" >
+				<img src="../../assets/wechat/s2.png"/>
+			</div>
+			<div id="" >
+				<img src="../../assets/wechat/s3.png"/>
+			</div>
+			<div id="" >
+				<img src="../../assets/wechat/s4.png"/>
+			</div>
+		</div>
+		<div id="content" v-on:click="Small_program_open(accounts.name,index)"   v-for="(accounts,index) in account">
+			<div id="" class="con_out" >
+			<div id="" class="margin_div" >
+				<div class="left_img" >
+					<img v-bind:src="accounts.img"/>
+				</div>
+				<div class="mid_con" >
+					<div id="" class="mid_con_div1" >
+						{{accounts.name}}
+					</div>
+					<div id="" class="mid_con_div2" >
+						{{accounts.content}}
+					</div>
+				</div>
+				<div class="right_time" >
+					 {{accounts.time}}
+				</div>
+			</div>
+			</div>
+		</div>
+		<!-- <div  v-for="accounts in account" >{{accounts.name}}</div> -->
+		<div style="height:50px"></div>
+		<bottomComponent></bottomComponent>
+		</div>
+</template>
+  ```  
 #### head_top.vue
   头部导航、搜索栏和快捷功能
   ``` js
