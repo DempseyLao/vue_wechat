@@ -86,8 +86,7 @@ vscode、git、node.js的安装都可以百度找到，在这里不多做介绍
         }
 	}, false);
   ```  
-   ``` js
-  //手指离开屏幕控制滑动事件
+  ``` js
 created(){//在页面创建的时候get easy-mock事先第一好的模拟数据 api调用
             this.$http.get('https://www.easy-mock.com/mock/5b5a9004e51b9b054104fa4a/account',{
             }).then(function(data){
