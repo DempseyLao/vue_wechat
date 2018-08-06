@@ -43,8 +43,30 @@ vscode、git、node.js的安装都可以百度找到，在这里不多做介绍
 vscode、git、node.js的安装都可以百度找到，在这里不多做介绍
 
 ```
+#### index.html 
+  单页面应用入口
+  
+#### main.js 
+  主程序进入、全局引用与模块加载
+  ``` js
+import Vue from 'vue'
+import App from './App'
+import router from './router'
+import axios from 'axios'
+// import YDUI from 'vue-ydui';
+// import 'vue-ydui/dist/ydui.rem.css';
 
+// Vue.use(YDUI);
+Vue.prototype.$ajax = axios
+Vue.config.productionTip = false
 
+/* eslint-disable no-new */
+new Vue({
+  el: '#app',
+  router,
+  components: { App },
+  template: '<App/>'
+})
 #### Bottom.vue 
   底部导航实现路由跳转、导航选中状态
   ``` js
