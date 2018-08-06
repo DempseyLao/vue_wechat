@@ -407,7 +407,7 @@ export default {
 #### list.vue
 通讯录详细通讯人详细与归类
 ```html
-<!-- 循环出排序信息（a-z#） -->
+  <!-- 循环出排序信息（a-z#） -->
    v-for="(num,index) in list2" :key="index"   
   <!--循环加载通讯录个人信息并归类（调用转化英文和截取字符串方法） -->
    v-for="(num2,index) in list_TEST" :key="index" v-if="num.name==chineseToPinYin(num2.name)
