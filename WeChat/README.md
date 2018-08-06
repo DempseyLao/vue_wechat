@@ -26,6 +26,9 @@ vscode、git、node.js的安装都可以百度找到，在这里不多做介绍
 
 
 ```
+### 欢迎页面
+- HelloWorld.vue 页面 主要为登录跳转程序进入的主页
+![Image text](https://raw.githubusercontent.com/DempseyLao/pictures/master/index.png)
 
 ### 前端JD实现的功能
 - newcomponent/newcomponents/jingdong.vue 京东登陆页面
@@ -43,7 +46,7 @@ vscode、git、node.js的安装都可以百度找到，在这里不多做介绍
 ``` js
 - Bottom.vue 底部导航实现路由跳转、导航选中状态 
   在各个主页面中，使用es6语法 import bottomComponent from './Bottom.vue' 配合引用共同组件
-- 
+
 ``` 
 
 ## 开发经验与总结
