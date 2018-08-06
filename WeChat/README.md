@@ -274,7 +274,7 @@ created(){//在页面创建的时候get easy-mock事先第一好的模拟数据 
 		</div>
   ```  
 #### chat.vue
-  聊天室页面
+  聊天室组件
   ``` js
  import contents from './chat_content.vue'//引入聊天详细信息模块
 export default {
@@ -319,10 +319,16 @@ export default {
 	}
 	
 }
-
- 
   ``` 
+#### chat_content.vue
+  聊天室信息内容组件
+``` 
+涉及到后端数据库设计与传值，具体的解决方案在https://github.com/DempseyLao/laodeyu/tree/dev
+文档：https://github.com/DempseyLao/laodeyu/blob/dev/2018%E5%B9%B48%E6%9C%882%E6%97%A5%E6%98%9F%E6%9C%9F%E5%9B%9B.docx
+2018年8月2日星期四.docx
 
+```
+  
 ## 开发经验与总结
 
 ``` bash
