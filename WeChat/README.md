@@ -60,7 +60,31 @@ vscode、git、node.js的安装都可以百度找到，在这里不多做介绍
   
   
   ``` js
-  在各个主页面中，使用es6语法 import bottomComponent from './Bottom.vue' 配合引用 <bottomComponent></bottomComponent>
+  //手指离开屏幕控制滑动事件
+ document.addEventListener("touchend", function(e) {
+        var endx, endy;
+        endx = e.changedTouches[0].pageX;
+        endy = e.changedTouches[0].pageY;
+        var direction = getDirection(startx, starty, endx, endy);
+        switch (direction) {
+            case 0:
+                break;
+            case 1:
+			   a=false;
+                break;
+			case 2:
+				a=true
+				this.Small_program=true;
+                break;
+            case 3:
+                console.log("向左←");
+                break;
+            case 4:
+                console.log("向右→");
+                break;
+            default:
+        }
+	}, false);
   ```  
 #### head_top.vue
   头部导航、搜索栏和快捷功能
