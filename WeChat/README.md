@@ -55,7 +55,18 @@ vscode、git、node.js的安装都可以百度找到，在这里不多做介绍
   ``` js
   在各个页面中，使用es6语法 import headComponent from './head_top.vue' 配合引用<headComponent></headComponent>
   ``` 
-
+#### wechat.vue
+  微信模块的主页主要实现，信息加载，好友数据显示，屏幕滑动指令（上滑加载小程序功能模块）下滑关闭，
+  
+  
+  ``` js
+  在各个主页面中，使用es6语法 import bottomComponent from './Bottom.vue' 配合引用 <bottomComponent></bottomComponent>
+  ```  
+#### head_top.vue
+  头部导航、搜索栏和快捷功能
+  ``` js
+  在各个页面中，使用es6语法 import headComponent from './head_top.vue' 配合引用<headComponent></headComponent>
+  ``` 
 
 ## 开发经验与总结
 
