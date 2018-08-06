@@ -48,12 +48,12 @@ vscode、git、node.js的安装都可以百度找到，在这里不多做介绍
 #### Bottom.vue 
   底部导航实现路由跳转、导航选中状态
   ``` js
-  在各个主页面中，使用es6语法 import bottomComponent from './Bottom.vue' 配合引用共同组件 
+  在各个主页面中，使用es6语法 import bottomComponent from './Bottom.vue' 配合引用共同组件 <bottomComponent></bottomComponent>
   ```  
 #### head_top.vue
   头部导航、搜索栏和快捷功能
   ``` js
-  在各个页面中，使用es6语法 import headComponent from './head_top.vue' 配合引用
+  在各个页面中，使用es6语法 import headComponent from './head_top.vue' 配合引用<headComponent></headComponent>
   ``` 
 
 
