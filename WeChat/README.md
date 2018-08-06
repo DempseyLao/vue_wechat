@@ -408,16 +408,9 @@ export default {
 通讯录详细通讯人详细与归类
 ```html
 <!-- 循环出排序信息（a-z#） -->
- <div  v-for="(num,index) in list2" :key="index"   class="d_jump"><div class="list_sty">
-  <div id="" style="padding-top: 3px;">{{num.name}}</div></div>
+   v-for="(num,index) in list2" :key="index"   
   <!--循环加载通讯录个人信息并归类（调用转化英文和截取字符串方法） -->
-    <div class=""  v-for="(num2,index) in list_TEST" :key="index" v-if="num.name==chineseToPinYin(num2.name)" 
-   style="height: 45px;text-align: left;;border-bottom: 1px solid #EEEEEE;margin:0px 18px 0px 15px;">
-	<div class="" style="margin: 7px 0px 0px 0px;">
-	<div id="" style="float: left;"><img v-bind:src="num2.img"/></div>
-	<div id="" style="padding: 11px 0px 0px 13px;float: left;font-size: 17px;">
-	{{num2.name}}
-	</div></div></div></div>
+   v-for="(num2,index) in list_TEST" :key="index" v-if="num.name==chineseToPinYin(num2.name)
 ```
 
 ## 开发经验与总结
