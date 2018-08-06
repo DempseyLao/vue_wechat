@@ -98,6 +98,7 @@ created(){//在页面创建的时候get easy-mock事先第一好的模拟数据 
         },
   ```  
   ``` html
+<!-- 利用vue的v-show，v-on， v-for 方法实现上滑下滑显示隐藏小程序模块、点击传参路由跳转、循环遍历信息-->
    	<div id="all">		
 		<headComponent></headComponent>
 		<div class="Small_program" v-show="Small_program" >
