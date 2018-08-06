@@ -273,10 +273,54 @@ created(){//在页面创建的时候get easy-mock事先第一好的模拟数据 
 		<bottomComponent></bottomComponent>
 		</div>
   ```  
-#### head_top.vue
-  头部导航、搜索栏和快捷功能
+#### chat.vue
+  聊天室页面
   ``` js
-  在各个页面中，使用es6语法 import headComponent from './head_top.vue' 配合引用<headComponent></headComponent>
+ import contents from './chat_content.vue'//引入聊天详细信息模块
+export default {
+    data(){    //定义数据与绑定
+        return{
+        chat_title:"",
+        add_chat_com:false,
+		foot_say:false,
+		foot_input:true,
+        } 
+    },
+    components: {
+		 contents  //加载模块
+    } ,
+    mounted(){
+      this.chat_title=this.$route.params.name//获取路由传参，绑定到数据（头部名称）
+    }
+    , methods:{
+      comback(){
+          this.$router.go(-1)//跳转回上级页面
+	  } 
+	  ,
+	append_other(){
+		 this.add_chat_com=!this.add_chat_com
+		 this.foot_say=false;
+		 this.foot_input=true
+	},
+	toc(){
+		this.foot_say=true;
+		this.foot_input=false
+	},
+	input(){
+		this.foot_say=false;
+		this.foot_input=true
+	}
+    },
+    beforeCreate: function() {  //页面加载前创建
+        document.getElementsByTagName("body")[0].className="all_chat";
+    },
+    beforeDestroy: function() { //结束前销毁
+        document.body.removeAttribute("class","all_chat");
+	}
+	
+}
+
+ 
   ``` 
 
 ## 开发经验与总结
