@@ -320,6 +320,7 @@ export default {
 	
 }
   ``` 
+  
 #### chat_content.vue
   聊天室信息内容组件
 ``` 
@@ -329,7 +330,81 @@ export default {
 
 2018年8月2日星期四.docx
 ```
-  
+#### Mail_list.vue
+  通讯录组件
+``` js
+import bottomComponent from './Bottom.vue'
+import headComponent from './head_top.vue'
+export default {
+	name:'name_list',
+    data(){
+        return{ //定义数组
+         list: [ {name:'↑'}, {name:'A'},{name:'B'},{name: 'C'}, {name:'D'},{name:'E'}, {name:'F'}, {name:'G' },{name:'H'},{name: 'I'},{name:'J'},{name:'K'},{name: 'L'},{name: 'M'},{name: 'N'},{name: 'O'},{name:'P'},{name:'Q'}, {name:'R'}, {name:'S'},{name: 'T'}, {name:'U'}, {name:'V'},{name:'W'}, {name:'X'},{name:'Y'}, {name:'Z'},{name: '#'}]    
+		
+        ,
+		index:-1,
+		
+        } 
+    },
+    components: {
+		 Operate: function(resolve) { //信息通讯录信息按需加载
+				require(['@/components/wechat/list.vue'], resolve)
+			},
+	  bottomComponent,
+	  headComponent,
+	 
+    } ,
+     methods:{
+       num_test_list(index){  //点击滑动跳转到对应锚点
+         // 用 class="d_jump" 添加锚点
+        let jump = document.querySelectorAll('.d_jump')
+        let total = jump[index].offsetTop-56
+        let distance = document.documentElement.scrollTop || document.body.scrollTop
+        // 平滑滚动，时长500ms，每10ms一跳，共50跳
+        let step = total / 50
+        if (total > distance) {
+          smoothDown()
+        } else {
+          let newTotal = distance - total
+          step = newTotal / 50
+          smoothUp()
+        }
+        function smoothDown () {
+          if (distance < total) {
+            distance += step
+　　　　　　　document.body.scrollTop = distance
+            document.documentElement.scrollTop = distance
+            setTimeout(smoothDown, 10)
+          } else {
+            document.body.scrollTop = total
+            document.documentElement.scrollTop = total
+          }
+        }
+        function smoothUp () {
+          if (distance > total) {
+            distance -= step
+　　　　　　　document.body.scrollTop = distance
+            document.documentElement.scrollTop = distance
+            setTimeout(smoothUp, 10)
+          } else {
+            document.body.scrollTop = total
+            document.documentElement.scrollTop = total
+          }
+       } 
+			
+		   
+	   }
+	},
+	mounted: function () {
+    this.$nextTick(function () {
+      window.addEventListener('scroll', this.onScroll)
+		})
+
+  },
+	
+}
+```
+
 ## 开发经验与总结
 
 ``` bash
