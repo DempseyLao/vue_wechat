@@ -97,8 +97,7 @@ created(){//在页面创建的时候get easy-mock事先第一好的模拟数据 
             })     
         },
   ```  
-    ``` html
-<template>
+  ``` html
    	<div id="all">		
 		<headComponent></headComponent>
 		<div class="Small_program" v-show="Small_program" >
@@ -139,7 +138,6 @@ created(){//在页面创建的时候get easy-mock事先第一好的模拟数据 
 		<div style="height:50px"></div>
 		<bottomComponent></bottomComponent>
 		</div>
-</template>
   ```  
 #### head_top.vue
   头部导航、搜索栏和快捷功能
