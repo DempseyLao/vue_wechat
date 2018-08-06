@@ -412,7 +412,9 @@ export default {
   <!--循环加载通讯录个人信息并归类（调用转化英文和截取字符串方法） -->
    v-for="(num2,index) in list_TEST" :key="index" v-if="num.name==chineseToPinYin(num2.name)
 ```
-
+#### find.vue 、friend_space.vue、my.vue、wallet.vue、search.vue
+#### 等vue组件不需要模拟数据大部分为静态页面配合一些简单的方法这里不多做介绍，
+#### 其中朋友圈信息、我的钱包等功能~需要在后期v2.0版本更新补齐
 ## 开发经验与总结
 
 ``` bash
