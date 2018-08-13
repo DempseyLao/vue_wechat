@@ -38,7 +38,7 @@ vscode、git、node.js的安装都可以百度找到，在这里不多做介绍
 - HelloWorld.vue 页面 主要为登录跳转程序进入的主页
 ![Image text](https://raw.githubusercontent.com/DempseyLao/pictures/master/index.png)
                  
-![Watch the video](https://raw.githubusercontent.com/DempseyLao/pictures/master/123.gif)
+![Image text](https://raw.githubusercontent.com/DempseyLao/pictures/master/123.gif)
 
 
 
