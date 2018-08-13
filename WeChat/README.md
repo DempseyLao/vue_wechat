@@ -56,8 +56,9 @@ vscode、git、node.js的安装都可以百度找到，在这里不多做介绍
 
 ```
 #### index.html 
-   程序展示GIF图：                                      ![Watch the video](https://raw.githubusercontent.com/DempseyLao/pictures/master/238.gif)
-   单页面应用入口
+   程序展示GIF图：                          
+   单页面应用入口            ![Watch the video](https://raw.githubusercontent.com/DempseyLao/pictures/master/238.gif)
+  
 #### main.js 
   主程序进入、全局引用与模块加载
   ``` js
