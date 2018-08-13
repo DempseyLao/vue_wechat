@@ -40,10 +40,10 @@ vscode、git、node.js的安装都可以百度找到，在这里不多做介绍
                  
 ![Watch the video](https://raw.githubusercontent.com/DempseyLao/pictures/master/123.gif)
 
-![Watch the video](https://raw.githubusercontent.com/DempseyLao/pictures/master/238.gif)
+
 
 ### 前端JD实现的功能
-- newcomponent/newcomponents/jingdong.vue 京东登陆页面
+- newcomponent/newcomponents/jingdong.vue 京东登陆页面 ![Watch the video](https://raw.githubusercontent.com/DempseyLao/pictures/master/238.gif)
 - 京东页面布局
 - 京东扫码、输入选择切换
 - 扫码（二维码）定时失效
