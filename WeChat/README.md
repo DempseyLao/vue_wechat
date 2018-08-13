@@ -5,6 +5,11 @@
 ## 建立 安装
 
 ``` bash
+# 建立项目存放文件夹（任意即可）
+Git bush here
+使用命令Git clone https://github.com/DempseyLao/vue_wechat.git
+或者直接下载zip到目录（解压进行下一步）
+
 # 安装配置文件
 npm install
 
