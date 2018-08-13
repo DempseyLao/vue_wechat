@@ -43,11 +43,11 @@ vscode、git、node.js的安装都可以百度找到，在这里不多做介绍
 
 
 ### 前端JD实现的功能
-- newcomponent/newcomponents/jingdong.vue 京东登陆页面 ![Watch the video](https://raw.githubusercontent.com/DempseyLao/pictures/master/238.gif)
+- newcomponent/newcomponents/jingdong.vue 京东登陆页面 
 - 京东页面布局
 - 京东扫码、输入选择切换
 - 扫码（二维码）定时失效
-- 输入框规则限制正则表达式、（限制与显示效果）
+- 输入框规则限制正则表达式、（限制与显示效果）![Watch the video](https://raw.githubusercontent.com/DempseyLao/pictures/master/238.gif)
 ### 前端WeChat实现的功能
 ``` bash
 # 前端的数据用easy_mock模拟，以接口api方式配合axios、vue-resource以方便动态数据获取和动态功能实现
